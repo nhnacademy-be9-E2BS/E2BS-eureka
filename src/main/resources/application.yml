@@ -1,0 +1,17 @@
+server:
+  port: 10230
+
+spring:
+  application:
+    name: eureka
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+  security:
+    user:
+      name: admin
+      password: 1234
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

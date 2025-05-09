@@ -1,0 +1,5 @@
+# 로컬 유레카 개발 환경
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:10230/eureka/
