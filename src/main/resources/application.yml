@@ -3,13 +3,18 @@ server:
 
 spring:
   application:
-    name: eureka
+    name: EUREKA
   lifecycle:
     timeout-per-shutdown-phase: 10s
   security:
     user:
       name: admin
       password: 1234
+
+  profiles:
+    active: prod
+  config:
+    import: optional:configserver:http://localhost:10240 # config 서버 연결
 
 eureka:
   client:

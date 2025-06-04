@@ -1,7 +1,7 @@
-# 실제서비스 환경 서버 배포
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@s1.java21.net:10230/eureka/
+## 실제서비스 환경 서버 배포
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@s1.java21.net:10230/eureka/
